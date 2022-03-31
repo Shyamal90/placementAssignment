@@ -36,3 +36,65 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+
+
+/* ===================
+   Custom Code
+======================*/
+
+.container{
+  border: 1px solid black;
+  /* height: 60vh; */
+  display: flex;
+  text-align: left;
+  min-width: 350px;
+}
+
+.filterSection{
+  border: 1px solid black;
+  flex: 0.2;
+  cursor: pointer;
+}
+
+/* Product Design */
+
+.productSection{
+  border: 1px solid black;
+  flex: 0.8;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.productContainer{
+  border: 1px solid black;
+  width: 25%;
+  padding: 0.4em 0.6em;
+  margin: 0.3em 0.6em;
+
+}
+
+.imageSection{
+  height: 10vw;
+  border: 1px soid black;
+  background-color: rebeccapurple;
+}
+
+.productDetails span{
+  font-weight: bold;
+}
+
+.cartBtn{
+  font-size: 1rem;
+  font-weight: bold;
+  border: 1px solid rebeccapurple;
+  color: rebeccapurple;
+  padding: 0.6em;
+  position: relative;
+  left: 35%;
+  cursor: pointer;
+  border-radius: 4px;
+}
