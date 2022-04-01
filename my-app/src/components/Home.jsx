@@ -1,8 +1,10 @@
 import React from 'react'
 import {useEffect, useState} from 'react'
 import { data } from './data'
+import {useNavigate} from 'react-router-dom'
 
 function Home() {
+    let nevigate = useNavigate();
     let [products,setProducts] = useState([...data])
     let [cartData,setCartData] = useState(()=>{
       let data = JSON.parse(localStorage.getItem("Carts")) || [];
@@ -39,7 +41,7 @@ function Home() {
     return (
       <div className="App">
         <h1>Shopping Mall</h1>
-        <a href="/checkout">CheckOut Page</a>
+        <a href=""onClick={()=>nevigate("/checkOut")}>CheckOut Page</a>
         {/* Option for select location */}
         <div className="locationSection">
           <select name="" id="">

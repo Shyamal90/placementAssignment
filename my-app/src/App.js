@@ -1,16 +1,15 @@
 import './App.css';
-import checkOut from './components/checkOut';
+import CheckOut from './components/CheckOut'
 import Home from './components/Home';
 import {Routes,Route} from 'react-router-dom'
 
 function App() {
   return(
-    <>
-     {/* <Routes>
-       <Route path='/' element={<Home/>}/>
-       {/* <Route /> */}
-     {/* </Routes> */} */}
-     <Home/>
+    <> 
+       <Routes>
+         <Route path='/' element={<Home/>}/>
+         <Route path="/checkOut" element={<CheckOut/>}/>
+       </Routes>
     </>
   )
 }
